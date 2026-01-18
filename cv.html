@@ -1,0 +1,1409 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Curriculum Vitae de Jesus Castro Martinez - Científico de Datos Junior | Ingeniero Electrónico">
+    <meta name="keywords" content="ciencia de datos, machine learning, aprendizaje automático, Python, SQL, análisis estadístico, estadística, ingeniería de características, feature engineering, visualización de datos, procesamiento de señales, procesamiento de datos, big data, pandas, numpy, scikit-learn, TensorFlow, PyTorch, Tableau, Power BI, AWS, Git, GitHub, modelos predictivos, A/B testing, análisis exploratorio de datos, EDA, ingeniero de datos, analista de datos, científico de datos junior">
+    <meta name="author" content="Jesus Castro Martinez">
+    <meta name="robots" content="index, follow">
+    
+    <title>Jesus Castro Martinez - CV Data Scientist</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="CV - Jesus Castro Martinez">
+    <meta property="og:description" content="Profesional de datos que habla el lenguaje de las máquinas. Combino formación en Data Science con 10 años de experiencia práctica en electrónica y aut...">
+    <meta property="og:type" content="website">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="CV - Jesus Castro Martinez">
+    <meta name="twitter:description" content="Profesional de datos que habla el lenguaje de las máquinas. Combino formación en Data Science con 10 años de experiencia práctica en electrónica y aut...">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Source+Code+Pro:wght@400;500&display=swap" rel="stylesheet">
+    
+    <style>
+/* 
+ * Harvard Style CV - CSS
+ * Optimizado para ATS y visualización
+ */
+
+:root {
+    /* Harvard Colors */
+    --harvard-crimson: #A51C30;
+    --harvard-gray: #545454;
+    --harvard-light-gray: #F5F5F5;
+
+    /* Light Theme Colors */
+    --primary-color: #2C3E50;
+    --secondary-color: #3498DB;
+    --accent-color: #E74C3C;
+    --text-color: #333333;
+    --light-text: #666666;
+    --border-color: #E0E0E0;
+    --background-color: #FFFFFF;
+    --section-bg: #F9F9F9;
+    --card-bg: #FFFFFF;
+
+    /* Gradients */
+    --gradient-primary: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    --gradient-secondary: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    --gradient-hero: linear-gradient(135deg, var(--harvard-crimson) 0%, #8B0000 100%);
+
+    /* Typography */
+    --font-primary: 'Source Sans Pro', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    --font-mono: 'Source Code Pro', 'Courier New', Courier, monospace;
+
+    /* Spacing */
+    --spacing-xs: 0.25rem;
+    --spacing-sm: 0.5rem;
+    --spacing-md: 1rem;
+    --spacing-lg: 1.5rem;
+    --spacing-xl: 2rem;
+    --spacing-xxl: 3rem;
+
+    /* Borders */
+    --border-radius: 8px;
+    --border-radius-lg: 12px;
+    --border-width: 1px;
+
+    /* Shadows */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.1);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.1);
+    --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.15);
+
+    /* Transitions */
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+    --transition-slow: 0.5s ease;
+}
+
+/* Dark Theme */
+[data-theme="dark"] {
+    --primary-color: #E8E8E8;
+    --secondary-color: #64B5F6;
+    --accent-color: #FF6B6B;
+    --text-color: #E0E0E0;
+    --light-text: #B0B0B0;
+    --border-color: #404040;
+    --background-color: #1A1A1A;
+    --section-bg: #242424;
+    --card-bg: #2A2A2A;
+    --gradient-hero: linear-gradient(135deg, #C41E3A 0%, #6B0000 100%);
+
+    /* Shadows for dark mode */
+    --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 8px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 16px rgba(0, 0, 0, 0.5);
+    --shadow-xl: 0 20px 40px rgba(0, 0, 0, 0.6);
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-primary);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    margin: 0;
+    padding: 0;
+    transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+/* ============================================================================
+   NAVIGATION BAR
+   ============================================================================ */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    transition: all var(--transition-normal);
+}
+
+[data-theme="dark"] .navbar {
+    background-color: rgba(26, 26, 26, 0.95);
+}
+
+.navbar.scrolled {
+    box-shadow: var(--shadow-md);
+}
+
+.nav-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--harvard-crimson);
+    text-decoration: none;
+    transition: transform var(--transition-fast);
+}
+
+.nav-logo:hover {
+    transform: scale(1.05);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    align-items: center;
+}
+
+.nav-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    position: relative;
+    transition: color var(--transition-fast);
+    padding: 0.5rem 0;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: var(--harvard-crimson);
+    transition: width var(--transition-normal);
+}
+
+.nav-link:hover::after,
+.nav-link.active::after {
+    width: 100%;
+}
+
+.nav-link:hover {
+    color: var(--harvard-crimson);
+}
+
+#theme-toggle {
+    background: none;
+    border: 2px solid var(--border-color);
+    color: var(--text-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all var(--transition-fast);
+}
+
+#theme-toggle:hover {
+    background-color: var(--harvard-crimson);
+    color: white;
+    border-color: var(--harvard-crimson);
+    transform: rotate(180deg);
+}
+
+/* Mobile Menu Toggle */
+.mobile-menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text-color);
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .nav-menu {
+        position: fixed;
+        top: 70px;
+        left: -100%;
+        flex-direction: column;
+        background-color: var(--background-color);
+        width: 100%;
+        padding: 2rem;
+        box-shadow: var(--shadow-lg);
+        transition: left var(--transition-normal);
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--background-color);
+    box-shadow: var(--shadow-lg);
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+/* Header Styles */
+.header {
+    background: var(--gradient-hero);
+    color: white;
+    padding: var(--spacing-xl) var(--spacing-lg);
+    text-align: center;
+}
+
+/* ============================================================================
+   HERO SECTION
+   ============================================================================ */
+
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--gradient-hero);
+    color: white;
+    text-align: center;
+    padding: var(--spacing-xxl) var(--spacing-lg);
+    position: relative;
+    overflow: hidden;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="rgba(255,255,255,0.05)" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,112C672,96,768,96,864,112C960,128,1056,160,1152,160C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>') no-repeat bottom;
+    background-size: cover;
+    opacity: 0.3;
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-profile {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin: 0 auto var(--spacing-lg);
+    border: 5px solid rgba(255, 255, 255, 0.3);
+    box-shadow: var(--shadow-xl);
+    object-fit: cover;
+    transition: transform var(--transition-normal);
+}
+
+.hero-profile:hover {
+    transform: scale(1.05) rotate(5deg);
+}
+
+.hero-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.2;
+}
+
+.hero-subtitle {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: var(--spacing-md);
+    opacity: 0.95;
+}
+
+.typing-text {
+    display: inline-block;
+    border-right: 3px solid white;
+    padding-right: 5px;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+
+    0%,
+    100% {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: white;
+    }
+}
+
+.hero-description {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: var(--spacing-xl);
+    opacity: 0.9;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero-cta {
+    display: flex;
+    gap: var(--spacing-lg);
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: var(--spacing-xl);
+}
+
+.btn {
+    padding: 1rem 2rem;
+    border-radius: var(--border-radius);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.1rem;
+    transition: all var(--transition-normal);
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    cursor: pointer;
+    border: none;
+}
+
+.btn-primary {
+    background-color: white;
+    color: var(--harvard-crimson);
+    box-shadow: var(--shadow-md);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-xl);
+}
+
+.btn-secondary {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+}
+
+.btn-secondary:hover {
+    background-color: white;
+    color: var(--harvard-crimson);
+}
+
+.scroll-indicator {
+    position: absolute;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: bounce 2s infinite;
+}
+
+.scroll-indicator i {
+    font-size: 2rem;
+    color: white;
+    opacity: 0.7;
+}
+
+@keyframes bounce {
+
+    0%,
+    20%,
+    50%,
+    80%,
+    100% {
+        transform: translateX(-50%) translateY(0);
+    }
+
+    40% {
+        transform: translateX(-50%) translateY(-10px);
+    }
+
+    60% {
+        transform: translateX(-50%) translateY(-5px);
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-title {
+        font-size: 2.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 1.3rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+
+    .hero-cta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .btn {
+        width: 100%;
+        max-width: 300px;
+        justify-content: center;
+    }
+}
+
+
+.header-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: var(--spacing-sm);
+    letter-spacing: -0.5px;
+}
+
+.title {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: var(--spacing-lg);
+    opacity: 0.9;
+}
+
+.contact-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    font-size: 1rem;
+}
+
+.contact-item i {
+    font-size: 1.1rem;
+    width: 20px;
+    text-align: center;
+}
+
+.contact-item a {
+    color: white;
+    text-decoration: none;
+    transition: opacity 0.3s;
+}
+
+.contact-item a:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-lg);
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: white;
+    text-decoration: none;
+    padding: var(--spacing-sm) var(--spacing-md);
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius);
+    transition: background-color 0.3s;
+}
+
+.social-link:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+.social-link i {
+    font-size: 1.2rem;
+}
+
+/* Main Content */
+.main-content {
+    padding: var(--spacing-xl);
+}
+
+.section {
+    margin-bottom: var(--spacing-xl);
+    padding-bottom: var(--spacing-lg);
+    border-bottom: var(--border-width) solid var(--border-color);
+}
+
+.section:last-child {
+    border-bottom: none;
+}
+
+.section-title {
+    color: var(--harvard-crimson);
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: var(--spacing-lg);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: 2px solid var(--harvard-crimson);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.section-title i {
+    font-size: 1.3rem;
+}
+
+.section-content {
+    padding-left: var(--spacing-md);
+}
+
+/* Summary */
+.summary {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: var(--text-color);
+    text-align: justify;
+}
+
+/* Skills Grid */
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.skill-category {
+    background-color: var(--section-bg);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--harvard-crimson);
+}
+
+.skill-category h3 {
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-md);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+}
+
+.skill-category h3 i {
+    color: var(--harvard-crimson);
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-sm);
+}
+
+.skill-tag {
+    background-color: white;
+    border: var(--border-width) solid var(--border-color);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    border-radius: 20px;
+    font-size: 0.9rem;
+    color: var(--text-color);
+    transition: all 0.3s;
+}
+
+.skill-tag:hover {
+    background-color: var(--harvard-crimson);
+    color: white;
+    border-color: var(--harvard-crimson);
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-sm);
+}
+
+/* Projects Grid */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.project-card {
+    background-color: white;
+    border: var(--border-width) solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: var(--spacing-lg);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--harvard-crimson);
+}
+
+.project-card h3 {
+    color: var(--harvard-crimson);
+    margin-bottom: var(--spacing-sm);
+    font-size: 1.3rem;
+}
+
+.project-tech {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-sm);
+    color: var(--light-text);
+    font-size: 0.9rem;
+    margin-bottom: var(--spacing-md);
+    font-family: var(--font-mono);
+}
+
+.project-tech i {
+    color: var(--harvard-crimson);
+}
+
+.project-desc {
+    line-height: 1.7;
+    color: var(--text-color);
+}
+
+/* Timeline (Experience) */
+.timeline {
+    position: relative;
+    padding-left: var(--spacing-lg);
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: var(--harvard-crimson);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: var(--spacing-xl);
+    padding-left: var(--spacing-lg);
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -9px;
+    top: 5px;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: var(--harvard-crimson);
+    border: 3px solid white;
+    box-shadow: 0 0 0 3px var(--harvard-crimson);
+}
+
+.timeline-header {
+    margin-bottom: var(--spacing-sm);
+}
+
+.timeline-header h3 {
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: var(--spacing-xs);
+}
+
+.timeline-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--spacing-md);
+    color: var(--light-text);
+    font-size: 0.95rem;
+}
+
+.company {
+    font-weight: 600;
+    color: var(--harvard-crimson);
+}
+
+.period {
+    font-style: italic;
+}
+
+.achievement-list {
+    list-style-type: none;
+    padding-left: var(--spacing-md);
+}
+
+.achievement-list li {
+    position: relative;
+    padding-left: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+    line-height: 1.6;
+}
+
+.achievement-list li::before {
+    content: '▸';
+    position: absolute;
+    left: 0;
+    color: var(--harvard-crimson);
+    font-weight: bold;
+}
+
+/* Education Grid */
+.education-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--spacing-lg);
+}
+
+.education-card {
+    background-color: var(--section-bg);
+    padding: var(--spacing-lg);
+    border-radius: var(--border-radius);
+    border-top: 4px solid var(--harvard-crimson);
+}
+
+.education-card h3 {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    margin-bottom: var(--spacing-sm);
+}
+
+.education-meta {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: var(--spacing-md);
+    padding-bottom: var(--spacing-sm);
+    border-bottom: var(--border-width) dashed var(--border-color);
+}
+
+.institution {
+    font-weight: 600;
+    color: var(--harvard-crimson);
+}
+
+.education-details {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.education-details li {
+    position: relative;
+    padding-left: var(--spacing-lg);
+    margin-bottom: var(--spacing-sm);
+}
+
+.education-details li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--harvard-crimson);
+    font-weight: bold;
+}
+
+/* Transferable Skills */
+.transferable-skills {
+    list-style-type: none;
+    padding-left: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: var(--spacing-md);
+}
+
+.transferable-skills li {
+    background-color: var(--section-bg);
+    padding: var(--spacing-md);
+    border-radius: var(--border-radius);
+    border-left: 3px solid var(--secondary-color);
+}
+
+/* Footer */
+.footer {
+    background-color: var(--section-bg);
+    padding: var(--spacing-lg);
+    text-align: center;
+    border-top: var(--border-width) solid var(--border-color);
+}
+
+.footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.footer p {
+    margin-bottom: var(--spacing-sm);
+    color: var(--light-text);
+    font-size: 0.9rem;
+}
+
+.footer i {
+    margin-right: var(--spacing-xs);
+    color: var(--harvard-crimson);
+}
+
+.copyright {
+    font-size: 0.85rem;
+    opacity: 0.7;
+}
+
+.ats-info {
+    margin-top: var(--spacing-md);
+    padding-top: var(--spacing-md);
+    border-top: var(--border-width) dashed var(--border-color);
+    font-size: 0.8rem;
+    color: var(--light-text);
+}
+
+/* Print Styles */
+@media print {
+    @page {
+        margin: 0.5in;
+        size: letter;
+    }
+
+    body {
+        background-color: white;
+        font-size: 11pt;
+        line-height: 1.3;
+    }
+
+    .container {
+        box-shadow: none;
+        max-width: 100%;
+    }
+
+    .header {
+        background: white !important;
+        color: black;
+        padding: 0;
+        margin-bottom: 0.2in;
+    }
+
+    .social-links,
+    .print-button,
+    .footer {
+        display: none;
+    }
+
+    .section {
+        page-break-inside: avoid;
+        margin-bottom: 0.1in;
+        padding-bottom: 0.1in;
+    }
+
+    a {
+        color: black;
+        text-decoration: none;
+    }
+
+    .skill-tag {
+        border: 1px solid #ccc;
+        background: white;
+        color: black;
+    }
+
+    .project-card {
+        border: 1px solid #ccc;
+        box-shadow: none;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        margin: 0;
+        border-radius: 0;
+    }
+
+    .header {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .name {
+        font-size: 2rem;
+    }
+
+    .title {
+        font-size: 1.2rem;
+    }
+
+    .main-content {
+        padding: var(--spacing-lg) var(--spacing-md);
+    }
+
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-md);
+    }
+
+    .social-links {
+        flex-direction: column;
+        align-items: center;
+        gap: var(--spacing-md);
+    }
+
+    .skills-grid,
+    .projects-grid,
+    .education-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline {
+        padding-left: var(--spacing-md);
+    }
+
+    .timeline-meta {
+        flex-direction: column;
+        gap: var(--spacing-xs);
+    }
+
+    .transferable-skills {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 480px) {
+    .name {
+        font-size: 1.8rem;
+    }
+
+    .title {
+        font-size: 1.1rem;
+    }
+
+    .section-title {
+        font-size: 1.3rem;
+    }
+
+    .skill-category,
+    .project-card,
+    .education-card {
+        padding: var(--spacing-md);
+    }
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.section {
+    animation: fadeIn 0.6s ease-out;
+}
+
+.section:nth-child(2) {
+    animation-delay: 0.1s;
+}
+
+.section:nth-child(3) {
+    animation-delay: 0.2s;
+}
+
+.section:nth-child(4) {
+    animation-delay: 0.3s;
+}
+
+.section:nth-child(5) {
+    animation-delay: 0.4s;
+}
+
+.section:nth-child(6) {
+    animation-delay: 0.5s;
+}
+
+.section:nth-child(7) {
+    animation-delay: 0.6s;
+}
+
+/* ATS Optimization Helper */
+.ats-helper {
+    position: fixed;
+    bottom: 10px;
+    left: 10px;
+    background: var(--harvard-crimson);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 3px;
+    font-size: 0.7rem;
+    opacity: 0.3;
+    z-index: 9999;
+}
+
+.ats-helper:hover {
+    opacity: 1;
+}
+    </style>
+    
+    <!-- ATS Optimization -->
+    <div style="display: none;">
+        <h1>Jesus Castro Martinez</h1>
+        <p>Científico de Datos Junior | Ingeniero Electrónico</p>
+        <p>Keywords: ciencia de datos, machine learning, aprendizaje automático, Python, SQL, análisis estadístico, estadística, ingeniería de características, feature engineering, visualización de datos, procesamiento de señales, procesamiento de datos, big data, pandas, numpy, scikit-learn, TensorFlow, PyTorch, Tableau, Power BI, AWS, Git, GitHub, modelos predictivos, A/B testing, análisis exploratorio de datos, EDA, ingeniero de datos, analista de datos, científico de datos junior</p>
+        <p>Profesional de datos que habla el lenguaje de las máquinas. Combino formación en Data Science con 10 años de experiencia práctica en electrónica y automatización.  No solo analizo datasets: comprendo qué significan físicamente los outliers y anomalías. Desarrollo modelos predictivos informados por understanding técnico real,  no solo por correlaciones estadísticas<br></p>
+    </div>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header">
+            <div class="header-content">
+                <h1 class="name">Jesus Castro Martinez</h1>
+                <h2 class="title">Científico de Datos Junior | Ingeniero Electrónico</h2>
+                
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Slp, Mexico</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+52 444 117 670</span>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:jesuscastromtz@gmail.com">
+                            jesuscastromtz@gmail.com
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/jesuscastromtz" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://github.com/jesuscastromtz" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://jesuscastromtz.github.io" target="_blank" class="social-link">
+                        <i class="fas fa-globe"></i> Portfolio
+                    </a>
+                </div>
+            </div>
+        </header>
+        
+        <main class="main-content">
+            <!-- Professional Summary -->
+            <section class="section">
+                <h2 class="section-title"><i class="fas fa-user-circle"></i> Resumen Profesional</h2>
+                <div class="section-content">
+                    <p class="summary">Profesional de datos que habla el lenguaje de las máquinas. Combino formación en Data Science con 10 años de experiencia práctica en electrónica y automatización.  No solo analizo datasets: comprendo qué significan físicamente los outliers y anomalías. Desarrollo modelos predictivos informados por understanding técnico real,  no solo por correlaciones estadísticas<br></p>
+                </div>
+            </section>
+            
+            <!-- Technical Skills -->
+            <section class="section">
+                <h2 class="section-title"><i class="fas fa-code"></i> Habilidades Técnicas</h2>
+                <div class="section-content skills-grid">
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-laptop-code"></i> Lenguajes de Programación</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Python (pandas, NumPy, scikit-learn, TensorFlow, PyTorch)</span><span class="skill-tag">SQL (MySQL, PostgreSQL)</span><span class="skill-tag">C++ (básico)</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-brain"></i> Machine Learning</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Aprendizaje supervisado: Regresión, Clasificación</span><span class="skill-tag">Aprendizaje no supervisado: Clustering, Reducción dimensionalidad</span><span class="skill-tag">Validación cruzada, Optimización de hiperparámetros</span><span class="skill-tag">Selección de características, Ingeniería de características</span><span class="skill-tag">Ensemble Methods: Random Forest, Gradient Boosting</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-chart-bar"></i> Análisis de Datos</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Estadística inferencial: Test de hipótesis, Intervalos confianza</span><span class="skill-tag">Análisis Exploratorio de Datos (EDA)</span><span class="skill-tag">Pruebas A/B, Diseño experimental</span><span class="skill-tag">Series temporales, Análisis predictivo</span><span class="skill-tag">Minería de datos, Limpieza de datos</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-chart-line"></i> Visualización</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Matplotlib, Seaborn, Plotly</span><span class="skill-tag">Visualización interactiva, Dashboards</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-wave-square"></i> Procesamiento de Señales</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Transformada de Fourier (FFT)</span><span class="skill-tag">Filtrado digital, Análisis espectral</span><span class="skill-tag">Procesamiento de señales biomédicas</span><span class="skill-tag">Extracción de características de señales</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-tools"></i> Herramientas</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Git, GitHub, GitLab</span><span class="skill-tag">Jupyter Notebooks, JupyterLab</span><span class="skill-tag">LaTeX, Overleaf</span><span class="skill-tag">Linux/Unix, Bash scripting</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3><i class="fas fa-database"></i> Bases de Datos</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">MySQL, PostgreSQL</span><span class="skill-tag">MongoDB (NoSQL)</span><span class="skill-tag">SQLite, SQLAlchemy</span>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+            <!-- Data Projects -->
+            <section class="section">
+                <h2 class="section-title"><i class="fas fa-project-diagram"></i> Proyectos de Ciencia de Datos</h2>
+                <div class="section-content projects-grid">
+
+                    <div class="project-card">
+                        <h3>End-to-End Telecom Churn Prediction: From Data to Business Impact</h3>
+                        <div class="project-tech">
+                            <i class="fas fa-cogs"></i> Python, Scikit-learn, XGBoost, Pandas, SQL, Streamlit, Docker, MLflow, GitHub Actions
+                        </div>
+                        <p class="project-desc">Desarrollé un pipeline completo de machine learning para predecir la fuga de clientes en una empresa de telecomunicaciones, aplicando metodología CRISP-DM. El sistema incluye desde análisis exploratorio y feature engineering hasta deployment de un dashboard interactivo, logrando identificar clientes en riesgo con 94% de precisión y reduciendo el churn en un 22% en pruebas simuladas.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Solving Real-World Imbalanced Data: Bank Churn Prediction with Advanced ML</h3>
+                        <div class="project-tech">
+                            <i class="fas fa-cogs"></i> Python, Imbalanced-learn, XGBoost, LightGBM, SMOTE, SHAP, Optuna
+                        </div>
+                        <p class="project-desc">Implementé un sistema avanzado de clasificación para predecir clientes bancarios en riesgo de abandonar, enfocado en resolver el desafío de datos desbalanceados (1:10 ratio). Optimicé F1-score mediante técnicas específicas para clases minoritarias, identificando patrones críticos que permitirían retener clientes de alto valor.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Real-Time Demand Forecasting: Time Series ML for Ride-Hailing</h3>
+                        <div class="project-tech">
+                            <i class="fas fa-cogs"></i> Python, Prophet, SARIMA, LSTM, Plotly, InfluxDB, FastAPI
+                        </div>
+                        <p class="project-desc">Desarrollé un motor de forecasting para predecir demanda de taxis por hora, comparando múltiples algoritmos de series temporales. El sistema optimiza la asignación de conductores durante horas pico, reduciendo tiempos de espera y maximizando ingresos mediante predicciones precisas a 24 horas vista.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>NLP Sentiment Analysis at Scale: Movie Review Classifier</h3>
+                        <div class="project-tech">
+                            <i class="fas fa-cogs"></i> Python, Transformers (BERT), spaCy, TF-IDF, FastText, DVC
+                        </div>
+                        <p class="project-desc">Construí un sistema de análisis de sentimiento para clasificar automáticamente reseñas de películas como positivas o negativas. Implementé y comparé múltiples enfoques de NLP, desde métodos tradicionales hasta transformers, optimizando para F1-score y velocidad de inferencia.</p>
+                    </div>
+
+                    <div class="project-card">
+                        <h3>Computer Vision System: Age Verification with Deep Learning</h3>
+                        <div class="project-tech">
+                            <i class="fas fa-cogs"></i> Python, TensorFlow, OpenCV, ResNet50, Streamlit, Docker
+                        </div>
+                        <p class="project-desc">Implementé un sistema de computer vision para estimar edad a partir de imágenes faciales, diseñado para garantizar cumplimiento normativo en venta de alcohol. Enfoque especial en precisión crítica en el umbral legal de 18 años, con técnicas de aumento de datos para mejorar robustez.</p>
+                    </div>
+
+                </div>
+            </section>
+            
+            <!-- Experience -->
+            <section class="section">
+                <h2 class="section-title"><i class="fas fa-briefcase"></i> Experiencia Profesional</h2>
+                <div class="section-content timeline">
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Líder de Equipo Técnico</h3>
+                            <div class="timeline-meta">
+                                <span class="company">Multisistemas Electrónicos S.A.</span>
+                                <span class="period">Enero 2020 - Presente</span>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <ul class="achievement-list">
+<li>Lideré un equipo de 4 técnicos, implementando un sistema de seguimiento y análisis de garantías que redujo los tiempos de reparación en un 20%, mediante la identificación y categorización de patrones de falla en los datos recopilados.</li><li>Establecí KPIs de rendimiento basados en métricas de satisfacción del cliente (NPS) y datos operativos, lo que posicionó al equipo como el mejor rankeado a nivel regional.</li><li>Identifiqué oportunidades para modelos predictivos al analizar datos históricos de fallas, sentando las bases para un sistema de mantenimiento preventivo basado en datos.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Técnico Senior en Electrónica</h3>
+                            <div class="timeline-meta">
+                                <span class="company">Multisistemas Electrónicos</span>
+                                <span class="period">2018 - 2021</span>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <ul class="achievement-list">
+<li>Realicé análisis de causa raíz (root-cause) basado en datos, documentando patrones de falla que permitieron reducir reincidencias en un 30%.</li><li>Desarrollé y apliqué un método estructurado de diagnóstico para resolver más de 50 casos críticos de garantía, sistematizando la toma de decisiones técnicas.</li><li>Capacité a nuevos técnicos en protocolos avanzados, desarrollando material formativo basado en casos documentados y métricas de eficiencia.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Técnico de Servicio</h3>
+                            <div class="timeline-meta">
+                                <span class="company">Multisistemas Electrónicos.</span>
+                                <span class="period">2015 - 2018</span>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <ul class="achievement-list">
+<li>Diseñé e implementé un sistema de categorización de dispositivos por frecuencia de error (adoptado a nivel nacional), permitiendo priorizar intervenciones y optimizar inventario.</li><li>Ejecuté más de 1,000 reparaciones, recopilando de manera sistemática datos sobre fallas que luego se utilizaron para mejorar procesos y generar insights para el departamento técnico.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-header">
+                            <h3>Docente y Coordinador en Arte y Tecnología</h3>
+                            <div class="timeline-meta">
+                                <span class="company">CANTE (Centro de Arte y Nuevas Tecnologías)</span>
+                                <span class="period">2010 – 2015</span>
+                            </div>
+                        </div>
+                        <div class="timeline-content">
+                            <ul class="achievement-list">
+<li>Diseñé e impartí cursos de programación (C/Python, Processing) y electrónica (Arduino, Raspberry Pi), con enfoque en lógica aplicada, automatización y procesamiento de señales.</li><li>Guié a estudiantes en el desarrollo de proyectos de IoT y sistemas interactivos, integrando la captura de datos sensoriales con su procesamiento y visualización.</li><li>Promoví el uso de software libre y metodologías abiertas para el análisis y la solución de problemas, enfatizando la importancia de los datos en la creación artística y tecnológica.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+            
+            <!-- Education -->
+            <section class="section">
+                <h2 class="section-title"><i class="fas fa-graduation-cap"></i> Educación</h2>
+                <div class="section-content education-grid">
+
+                    <div class="education-card">
+                        <h3>Ingeniería Electrónica</h3>
+                        <div class="education-meta">
+                            <span class="institution">Instituto Tecnológico de San Luis Potosí</span>
+                            <span class="period">2004 - 2011</span>
+                        </div>
+                        <ul class="education-details">
+<li>Especialización en Automatización y Control de Señales Digitales</li><li>Materias relevantes: Procesamiento Digital de Señales, Algoritmos Avanzados, Probabilidad y Estadística, Optimización</li>
+                        </ul>
+                    </div>
+
+                    <div class="education-card">
+                        <h3>Bootcamp en Ciencia de Datos</h3>
+                        <div class="education-meta">
+                            <span class="institution">TripleTen</span>
+                            <span class="period">2022 - 2023 (320 horas)</span>
+                        </div>
+                        <ul class="education-details">
+<li>Proyecto final: Sistema de detección de fraudes en transacciones con XGBoost (95% precisión)</li><li>Tecnologías: Python, pandas, scikit-learn, XGBoost, SQL, Tableau, Git</li><li>Metodologías: CRISP-DM, Agile Data Science</li>
+                        </ul>
+                    </div>
+
+                </div>
+            </section>
+            
+            <!-- Achievements -->
+            <section class="section">
+                <h2 class="section-title"><i class="fas fa-trophy"></i> Logros y Publicaciones</h2>
+                <div class="section-content">
+                    <ul class="achievement-list">
+<li>Publicación en IEEE: &#39;Análisis de Series Temporales en Datos de Sensores Industriales&#39;, Conferencia Internacional de Procesamiento de Señales, 2021</li><li>Premio a la Innovación 2020: Reconocimiento por desarrollo de algoritmo de compresión de datos para sistemas IoT</li><li>Kaggle Competitions: Top 15% en &#39;House Prices: Advanced Regression Techniques&#39; (2022), Top 20% en &#39;Titanic: Machine Learning from Disaster&#39; (2021)</li><li>Patente pendiente: &#39;Sistema de monitoreo predictivo para equipos electrónicos basado en análisis de vibraciones&#39;</li><li>Speaker en PyData Madrid 2022: &#39;Transición de Ingeniería Electrónica a Ciencia de Datos: Lecciones Aprendidas&#39;</li>
+                    </ul>
+                </div>
+            </section>
+            
+            <!-- Transferable Skills -->
+            <section class="section">
+                <h2 class="section-title"><i class="fas fa-exchange-alt"></i> Habilidades Transferibles</h2>
+                <div class="section-content">
+                    <ul class="transferable-skills">
+<li>Pensamiento Analítico: Capacidad demostrada para descomponer problemas complejos (diseño de circuitos) en componentes manejables, aplicable a feature engineering y análisis de datos</li><li>Modelado Matemático: Experiencia en creación de modelos para sistemas físicos complejos, directamente transferible a desarrollo de modelos predictivos</li><li>Metodología Científica: Enfoque riguroso en diseño experimental, recolección sistemática de datos y validación estadística de resultados</li><li>Gestión de Proyectos Técnicos: Experiencia en planificación, ejecución y entrega de proyectos bajo restricciones de tiempo, presupuesto y recursos</li><li>Comunicación Técnica: Habilidad para explicar conceptos complejos a audiencias no técnicas mediante visualizaciones efectivas y storytelling con datos</li><li>Resolución de Problemas: Enfoque estructurado para diagnóstico y solución de problemas técnicos, aplicable a debugging de pipelines de datos</li><li>Aprendizaje Continuo: Demostrada capacidad para adquirir nuevas competencias técnicas (transición exitosa a data science)</li>
+                    </ul>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <p>
+                    <i class="fas fa-sync-alt"></i> 
+                    Última actualización: 2026-01-17 | 
+                    <i class="fas fa-robot"></i> 
+                    Generado automáticamente | 
+                    <i class="fas fa-filter"></i> 
+                    Optimizado para ATS
+                </p>
+                <p class="copyright">
+                    © 2026 Jesus Castro Martinez 
+                    - Todos los derechos reservados
+                </p>
+                <div class="ats-info">
+                    <small>
+                        <i class="fas fa-info-circle"></i>
+                        Keywords ATS: ciencia de datos, machine learning, aprendizaje automático, Python, SQL, análisis estadístico, estadística, ingeniería de características, feature engineering, visualización de datos...
+                    </small>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <!-- JavaScript for interactivity -->
+    <script>
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                if(targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 20,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+        
+        // Print functionality
+        document.addEventListener('keydown', function(e) {
+            if((e.ctrlKey || e.metaKey) && e.key === 'p') {
+                e.preventDefault();
+                window.print();
+            }
+        });
+        
+        console.log('CV HTML cargado correctamente');
+        console.log('Palabras clave ATS:', ["ciencia de datos", "machine learning", "aprendizaje automático", "Python", "SQL", "análisis estadístico", "estadística", "ingeniería de características", "feature engineering", "visualización de datos", "procesamiento de señales", "procesamiento de datos", "big data", "pandas", "numpy", "scikit-learn", "TensorFlow", "PyTorch", "Tableau", "Power BI", "AWS", "Git", "GitHub", "modelos predictivos", "A/B testing", "análisis exploratorio de datos", "EDA", "ingeniero de datos", "analista de datos", "científico de datos junior"]);
+    </script>
+</body>
+</html>
